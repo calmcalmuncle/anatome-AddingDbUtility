@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="debug">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/out/production/anatome-AddingDBUtility/FetchJSON/app/build/intermediates/pre-dexed/debug/debug_979283d2cfc8d39e5110e8c513c2df0482128316.jar!/" />
+      <root url="jar://$PROJECT_DIR$/out/production/anatome-AddingDBUtility/FetchJSON/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.1.1_2f6bc5bf07dbb559af17378d0f231d273d719a15.jar!/" />
+      <root url="jar://$PROJECT_DIR$/out/production/anatome-AddingDBUtility/FetchJSON/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.1.1_2ca1be38c518d47063d2977bc908f401fffc6f2b.jar!/" />
+      <root url="jar://$PROJECT_DIR$/out/production/anatome-AddingDBUtility/FetchJSON/app/build/intermediates/pre-dexed/debug/com.android.support-design-23.1.1_dfe90c53d9a1b9b1590b31d34fcca9116be4f1a2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/out/production/anatome-AddingDBUtility/FetchJSON/app/build/intermediates/pre-dexed/debug/internal_impl-23.1.1_ba15b601dbc731d11164b46efc5a88c02b1e59c7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/out/production/anatome-AddingDBUtility/FetchJSON/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-23.1.1_a157fc269110c7f51f5108dd63ba6054aba112b1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/out/production/anatome-AddingDBUtility/FetchJSON/app/build/intermediates/pre-dexed/debug/httpclient-4.4.1.1_1727e7323c809955f594f4cfbcf17f4910204224.jar!/" />
+      <root url="jar://$PROJECT_DIR$/out/production/anatome-AddingDBUtility/FetchJSON/app/build/intermediates/pre-dexed/debug/support-annotations-23.1.1_c4a1b27d427df4eeb05f01eab70db7f4c3578722.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
