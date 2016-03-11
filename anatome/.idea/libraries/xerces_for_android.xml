@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="xerces-for-android">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/anatome/app/libs/xerces-for-android.jar!/" />
+      <root url="jar://$PROJECT_DIR$/out/production/anatome/anatome/app/libs/xerces-for-android.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
