@@ -17,12 +17,30 @@
         android:orientation="vertical">
 
 
-        <ImageView
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="fill_parent"
-            android:id="@+id/kite"
-            android:src="@drawable/kite"
-            android:adjustViewBounds="true" />
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/kite"
+                android:src="@drawable/kite"
+                android:adjustViewBounds="true" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Book"
+                android:id="@+id/bookButton"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="28dp"
+                style="?android:attr/borderlessButtonStyle"
+                android:textSize="26dp"
+                android:textColor="#09849a"/>
+
+        </RelativeLayout>
 
         <ImageView
             android:layout_width="match_parent"
@@ -30,15 +48,6 @@
             android:adjustViewBounds="true"
             android:id="@+id/welcome"
             android:src="@drawable/one" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Book"
-            android:id="@+id/bookButton"
-            android:layout_gravity="right"
-            android:background="#ffffffff"
-            android:textSize="10dp"/>
 
         <ImageView
             android:layout_width="match_parent"

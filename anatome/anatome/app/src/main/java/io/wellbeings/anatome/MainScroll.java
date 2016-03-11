@@ -74,5 +74,4 @@ public class MainScroll extends Activity {
             startActivity(intent);
         }
     };
-
 }

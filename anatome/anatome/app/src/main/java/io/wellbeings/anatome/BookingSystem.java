@@ -32,6 +32,7 @@ public class BookingSystem extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.booking_system);
 
+
         mSetDate = (TextView) findViewById(R.id.setDate);
         mSetTime = (TextView) findViewById(R.id.setTime);
         mBackFromBooking = (Button) findViewById(R.id.backFromBooking);
