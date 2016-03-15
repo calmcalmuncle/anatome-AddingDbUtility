@@ -1,100 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#49cbde">
 
-    <RelativeLayout
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView2"
+        android:src="@drawable/balloonribbon"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true" />
+
+    <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1">
+        android:layout_height="match_parent">
 
-        <ImageView
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/imageView3"
-            android:src="@drawable/firstfourth"
-            android:scaleType="fitXY"
-            android:adjustViewBounds="true"
-            android:layout_weight="1" />
+            android:layout_weight="1.35">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Test Text Up"
-            android:id="@+id/textView3"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:textColor="#ffffffff"
-            android:textSize="32dp" />
-    </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/bookedDate"
+                android:layout_gravity="center_horizontal|bottom"
+                android:textColor="#ffffffff"
+                android:layout_marginBottom="6dp"
+                android:textSize="26dp"
+                android:text="dd-MM-yy"
+                />
+        </FrameLayout>
 
-    <RelativeLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1">
-
-        <ImageView
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/imageView4"
-            android:layout_weight="1"
-            android:src="@drawable/secondfourth"
-            android:adjustViewBounds="true"
-            android:scaleType="fitXY" />
+            android:layout_weight="1.2">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Test Text Bottom"
-            android:id="@+id/textView4"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:textColor="#ffffffff"
-            android:textSize="32dp" />
-    </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/bookedTime"
+                android:layout_gravity="center_horizontal|top"
+                android:textColor="#ffffffff"
+                android:layout_marginTop="6dp"
+                android:textSize="26dp"
+                android:text="hh:mm a" />
+        </FrameLayout>
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1">
-
-        <ImageView
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/imageView5"
-            android:layout_weight="1"
-            android:adjustViewBounds="true"
-            android:src="@drawable/thirdfourth"
-            android:scaleType="fitXY" />
+            android:layout_weight="1">
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Back"
-            android:id="@+id/backFromBooked"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:paddingBottom="40dp"
-            style="?android:attr/borderlessButtonStyle"
-            android:textSize="24dp"
-            android:textColor="#09849a"/>
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1">
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/imageView2"
-            android:scaleType="fitXY"
-            android:adjustViewBounds="true"
-            android:src="@drawable/fourthfourth" />
-    </RelativeLayout>
-
-</LinearLayout>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Back"
+                android:id="@+id/backFromBooked"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_marginTop="24dp"
+                android:layout_marginRight="1dp"
+                android:textSize="20dp"
+                style="?android:attr/borderlessButtonStyle"
+                android:textColor="#09849a"/>
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

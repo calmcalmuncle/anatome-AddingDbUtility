@@ -76,7 +76,7 @@
                         android:layout_gravity="left|center_vertical"
                         android:layout_marginTop="18dp"
                         android:onClick="dateOnClick"
-                        android:textSize="26dp"
+                        android:textSize="28dp"
                         android:textColor="#09849a" />
                 </FrameLayout>
 
@@ -117,7 +117,7 @@
                         android:layout_gravity="left|center_vertical"
                         android:layout_marginTop="18dp"
                         android:onClick="timeOnClick"
-                        android:textSize="26dp"
+                        android:textSize="28dp"
                         android:textColor="#09849a" />
                 </FrameLayout>
             </LinearLayout>
