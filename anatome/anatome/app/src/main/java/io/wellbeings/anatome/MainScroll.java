@@ -43,6 +43,7 @@ public class MainScroll extends Activity {
 
         // ************************************************************
         findViewById(R.id.bookButton).setOnClickListener(navigateToBookingSystem);
+        findViewById(R.id.testButton).setOnClickListener(navigateToTestLayout);
         // ************************************************************
 
     }
@@ -75,4 +76,12 @@ public class MainScroll extends Activity {
         }
     };
 
+    private OnClickListener navigateToTestLayout = new OnClickListener() {
+        @Override
+        public void onClick(View v) {
+
+            Intent intent = new Intent(v.getContext(), TestLayout.class);
+            startActivity(intent);
+        }
+    };
 }
