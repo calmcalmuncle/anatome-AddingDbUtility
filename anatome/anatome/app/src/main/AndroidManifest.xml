@@ -27,12 +27,10 @@
         />
         <activity
             android:name=".BookingSystem"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar" /><![CDATA[
         />
-        <activity
-            android:name=".DisplayAppointment"
-            android:theme="@style/AppTheme.NoActionBar" />
         />
+        ]]>
         <activity
             android:name=".TestLayout"
             android:theme="@style/AppTheme.NoActionBar" />

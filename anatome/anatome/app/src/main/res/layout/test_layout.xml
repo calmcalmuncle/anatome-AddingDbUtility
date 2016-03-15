@@ -56,22 +56,45 @@
             android:textSize="32dp" />
     </RelativeLayout>
 
-    <ImageView
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/imageView5"
-        android:layout_weight="1"
-        android:adjustViewBounds="true"
-        android:src="@drawable/thirdfourth"
-        android:scaleType="fitXY" />
+        android:layout_weight="1">
 
-    <ImageView
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView5"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:src="@drawable/thirdfourth"
+            android:scaleType="fitXY" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:id="@+id/backFromBooked"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="40dp"
+            style="?android:attr/borderlessButtonStyle"
+            android:textSize="24dp"
+            android:textColor="#09849a"/>
+    </RelativeLayout>
+
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/imageView6"
-        android:layout_weight="1"
-        android:src="@drawable/fourthfourth"
-        android:scaleType="fitXY"
-        android:adjustViewBounds="true" />
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView2"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:src="@drawable/fourthfourth" />
+    </RelativeLayout>
 
 </LinearLayout>
