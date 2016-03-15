@@ -54,10 +54,4 @@ public class DatabaseUtility {
         ExecutePost s = new ExecutePost();
         s.execute();
     }
-
-
-
-
-
-
 }
