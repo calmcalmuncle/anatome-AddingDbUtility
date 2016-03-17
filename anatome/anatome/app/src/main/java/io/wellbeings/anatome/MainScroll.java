@@ -1,13 +1,10 @@
 package io.wellbeings.anatome;
 
 import android.app.Activity;
-import android.content.res.AssetManager;
-import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.content.Intent;
-import android.widget.Button;
 
 /**
  * Main activity handles navigation to custom
@@ -15,7 +12,6 @@ import android.widget.Button;
  * launchpad for app's key features.
  */
 public class MainScroll extends Activity {
-
 
     /**
      * On activity creation, set up canvas.
@@ -46,7 +42,7 @@ public class MainScroll extends Activity {
 
 
         // ************************************************************
-        findViewById(R.id.bookButtonOnMainScroll).setOnClickListener(navigateToBookingSystem);
+        findViewById(R.id.bookButton).setOnClickListener(navigateToBookingSystem);
         findViewById(R.id.testButton).setOnClickListener(navigateToTestLayout);
         // ************************************************************
 
