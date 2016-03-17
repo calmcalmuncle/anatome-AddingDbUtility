@@ -51,8 +51,7 @@ public class BookingSystem extends AppCompatActivity {
         mBackFromBooking.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(), MainScroll.class);
-                startActivity(intent);
+                toMainScroll();
                 // postBooking();
             }
         });
@@ -62,6 +61,7 @@ public class BookingSystem extends AppCompatActivity {
             public void onClick(View v) {
                 postBooking();
                 disableBookButton();
+                switchView();
             }
         });
 
@@ -152,9 +152,27 @@ public class BookingSystem extends AppCompatActivity {
         Toast.makeText(BookingSystem.this, "Appointment Booked", Toast.LENGTH_SHORT).show();
     }
 
-    public void disableBookButton() {
+    private void disableBookButton() {
 
         mBook.setEnabled(false);
         mBook.setTextColor(Color.parseColor("#BBBBBB"));
+    }
+
+    private void switchView() {
+
+        setContentView(R.layout.test_layout);
+        Button backBtn = (Button)findViewById(R.id.backFromBooked);
+
+        backBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                toMainScroll();
+            }
+        });
+    }
+
+    private void toMainScroll() {
+        Intent i = new Intent(BookingSystem.this, MainScroll.class);
+        startActivity(i);
     }
 }
