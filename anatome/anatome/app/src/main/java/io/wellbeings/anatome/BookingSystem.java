@@ -30,9 +30,7 @@ public class BookingSystem extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //setContentView(R.layout.booking_system);
-        //setContentView(R.layout.book_layout);
-        setContentView(R.layout.book_2_layout);
+        setContentView(R.layout.booking_layout);
 
 
         mSetDate = (TextView) findViewById(R.id.setDate);
