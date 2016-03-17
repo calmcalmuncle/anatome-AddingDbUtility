@@ -26,7 +26,7 @@ public class TestLayout extends AppCompatActivity {
         AssetManager assetManager = getAssets();
         Typeface customFont = Typeface.createFromAsset(assetManager, "fonts/champagne.ttf");
 
-        mBackFromBooked.setTypeface(customFont);
+        //mBackFromBooked.setTypeface(customFont);
         mBackFromBooked.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

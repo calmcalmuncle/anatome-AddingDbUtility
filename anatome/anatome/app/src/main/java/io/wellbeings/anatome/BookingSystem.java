@@ -39,8 +39,7 @@ public class BookingSystem extends AppCompatActivity {
         mBook = (Button) findViewById(R.id.bookFromBooking);
         mBookingTitle = (TextView) findViewById(R.id.bookingTitle);
 
-        AssetManager assetManager = getAssets();
-        Typeface customFont = Typeface.createFromAsset(assetManager, "fonts/champagne.ttf");
+        Typeface customFont = defineCustomFont();
 
         mSetDate.setTypeface(customFont);
         mSetTime.setTypeface(customFont);
@@ -163,6 +162,9 @@ public class BookingSystem extends AppCompatActivity {
         setContentView(R.layout.test_layout);
         Button backBtn = (Button)findViewById(R.id.backFromBooked);
 
+        Typeface customFont = defineCustomFont();
+        backBtn.setTypeface(customFont);
+
         backBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -174,5 +176,13 @@ public class BookingSystem extends AppCompatActivity {
     private void toMainScroll() {
         Intent i = new Intent(BookingSystem.this, MainScroll.class);
         startActivity(i);
+    }
+
+    private Typeface defineCustomFont() {
+
+        AssetManager assetManager = getAssets();
+        Typeface customFont = Typeface.createFromAsset(assetManager, "fonts/champagne.ttf");
+
+        return customFont;
     }
 }

@@ -7,7 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.content.Intent;
-import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 
 /**
  * Main activity handles navigation to custom
@@ -46,7 +47,7 @@ public class MainScroll extends Activity {
 
 
         // ************************************************************
-        findViewById(R.id.bookButtonOnMainScroll).setOnClickListener(navigateToBookingSystem);
+        findViewById(R.id.bookingInfoButton).setOnClickListener(navigateToBookingSystem);
         findViewById(R.id.testButton).setOnClickListener(navigateToTestLayout);
         // ************************************************************
 
@@ -72,11 +73,31 @@ public class MainScroll extends Activity {
 
     // ************************************************************
     private OnClickListener navigateToBookingSystem = new OnClickListener() {
-        @Override
-        public void onClick(View v) {
+       @Override
+       public void onClick(View v) {
 
-            Intent intent = new Intent(v.getContext(), BookingSystem.class);
-            startActivity(intent);
+           ImageButton book = (ImageButton) v;
+           ImageButton arrow = (ImageButton) findViewById(R.id.bookButtonOnMainScroll);
+           ImageView bgImage = (ImageView) findViewById(R.id.bookingSystemBackgroundKite);
+
+           book.setVisibility(View.INVISIBLE);
+           bgImage.setImageResource(R.drawable.bookingbg);
+
+           AssetManager assetManager = getAssets();
+           Typeface customFontBariol = Typeface.createFromAsset(assetManager, "fonts/Bariol.ttf");
+           Typeface customFontHelvetica = Typeface.createFromAsset(assetManager, "fonts/Helvetica.ttf");
+
+           arrow.setVisibility(View.VISIBLE);
+
+           arrow.setOnClickListener(new OnClickListener() {
+               @Override
+               public void onClick(View v) {
+                   Intent intent = new Intent(v.getContext(), BookingSystem.class);
+                   startActivity(intent);
+               }
+           });
+
+
         }
     };
 

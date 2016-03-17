@@ -8,9 +8,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/imageView2"
-        android:src="@drawable/balloonribbon"
         android:scaleType="fitXY"
-        android:adjustViewBounds="true" />
+        android:adjustViewBounds="true"
+        android:src="@drawable/balloon_blue" />
 
     <LinearLayout
         android:orientation="vertical"
@@ -63,11 +63,12 @@
                 android:text="Back"
                 android:id="@+id/backFromBooked"
                 android:layout_gravity="center_horizontal|top"
-                android:layout_marginTop="24dp"
+                android:layout_marginTop="22dp"
                 android:layout_marginRight="1dp"
-                android:textSize="20dp"
+                android:textSize="24dp"
                 style="?android:attr/borderlessButtonStyle"
-                android:textColor="#09849a"/>
+                android:textColor="#09849a"
+                />
         </FrameLayout>
     </LinearLayout>
 </RelativeLayout>
