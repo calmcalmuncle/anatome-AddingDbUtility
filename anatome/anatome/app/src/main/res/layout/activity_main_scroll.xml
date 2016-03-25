@@ -5,8 +5,8 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:id="@+id/scrollView"
-    android:background="@color/main_main_bg"
-    android:fillViewport="false">
+        android:background="@color/main_main_bg"
+        android:fillViewport="false">
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
@@ -60,13 +60,6 @@
             android:adjustViewBounds="true"
             android:id="@+id/welcome"
             android:src="@drawable/one" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Test"
-            android:id="@+id/testButton"
-            android:background="#ffffffff" />
 
         <ImageView
             android:layout_width="match_parent"
