@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 /**
  * Created by bettinaalexieva on 15/03/2016.
@@ -34,5 +35,12 @@ public class TestLayout extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        TextView t = (TextView) findViewById(R.id.bookedDate);
+        TextView y = (TextView) findViewById(R.id.bookedTime);
+
+        DatabaseUtility db = new DatabaseUtility();
+        db.getData("app", t, y);
+
     }
 }
