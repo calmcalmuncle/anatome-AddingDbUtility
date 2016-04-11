@@ -60,9 +60,13 @@ public class BookingSystem extends AppCompatActivity {
             public void onClick(View v) {
                 postBooking();
                 disableBookButton();
-                switchView();
+                //switchView();
+                Intent intent = new Intent(BookingSystem.this, TestLayout.class);
+                startActivity(intent);
             }
         });
+
+        //findViewById(R.id.bookFromBooking).setOnClickListener(navigateToTestLayout);
 
         setCurrentDateOnView();
     }
@@ -157,9 +161,10 @@ public class BookingSystem extends AppCompatActivity {
         mBook.setTextColor(Color.parseColor("#BBBBBB"));
     }
 
-    private void switchView() {
+   /* private void switchView() {
 
         setContentView(R.layout.test_layout);
+
         Button backBtn = (Button)findViewById(R.id.backFromBooked);
 
         Typeface customFont = defineCustomFont();
@@ -171,7 +176,7 @@ public class BookingSystem extends AppCompatActivity {
                 toMainScroll();
             }
         });
-    }
+    }*/
 
     private void toMainScroll() {
         Intent i = new Intent(BookingSystem.this, MainScroll.class);
@@ -185,4 +190,5 @@ public class BookingSystem extends AppCompatActivity {
 
         return customFont;
     }
+
 }
