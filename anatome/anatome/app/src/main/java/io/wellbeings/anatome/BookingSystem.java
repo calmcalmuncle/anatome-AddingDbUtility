@@ -160,6 +160,7 @@ public class BookingSystem extends AppCompatActivity {
     private void switchView() {
 
         setContentView(R.layout.test_layout);
+
         Button backBtn = (Button)findViewById(R.id.backFromBooked);
 
         Typeface customFont = defineCustomFont();
@@ -185,4 +186,13 @@ public class BookingSystem extends AppCompatActivity {
 
         return customFont;
     }
+
+    private View.OnClickListener navigateToTestLayout = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+
+            Intent intent = new Intent(v.getContext(), TestLayout.class);
+            startActivity(intent);
+        }
+    };
 }
