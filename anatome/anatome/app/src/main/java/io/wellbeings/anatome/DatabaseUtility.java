@@ -139,8 +139,11 @@ public class DatabaseUtility {
                         appointments.put(TAG_TIME, name);
                     }
 
-                    dateView.setText(appointments.get(TAG_DATE).toString());
-                    timeView.setText(appointments.get(TAG_TIME).toString());
+                    //dateView.setText(appointments.get(TAG_DATE).toString());
+                    //timeView.setText(appointments.get(TAG_TIME).toString());
+
+                    dateView.setText("Hello");
+                    timeView.setText("Testing");
 
 
                 } catch (Exception e) {
